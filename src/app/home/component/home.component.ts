@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  public imgURL = "https://cdn.jsdelivr.net/gh/GauravAsija01/book-store@master/src/" 
+  public imgURL = "https://cdn.jsdelivr.net/gh/GauravAsija01/book-store@master/src/asset/" 
 
   constructor() { }
 
