@@ -24,19 +24,32 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/asset/css/bootstrap.min.css",
-              "src/asset/css/normalize.css",
-              "src/asset/css/font-awesome.min.css",
-              "src/asset/css/bootstrap.min.css",
-              "src/asset/css/icomoon.css",
-              "src/asset/css/jquery-ui.css",
-              "src/asset/css/owl.carousel.css",
-              "src/asset/css/transitions.css",
-              "src/asset/css/main.css",
-              "asset/css/color-purple.css",
-              "asset/css/responsive.css"
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/normalize.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/icomoon.css",
+              "src/assets/css/jquery-ui.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/transitions.css",
+              "src/assets/css/main.css",
+              "src/assets/css/color-purple.css",
+              "src/assets/css/responsive.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js",
+              "src/assets/js/vendor/jquery-library.js",
+              "src/assets/js/vendor/bootstrap.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/jquery.vide.min.js",
+              "src/assets/js/countdown.js",
+              "src/assets/js/jquery-ui.js",
+              "src/assets/js/parallax.js",
+              "src/assets/js/countTo.js",
+              "src/assets/js/appear.js",
+              "src/assets/js/gmap3.js",
+             "src/assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
