@@ -72,7 +72,18 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "styles.css"
+              "styles.css",
+              "asset/css/bootstrap.min.css",
+              "asset/css/normalize.css",
+              "asset/css/font-awesome.min.css",
+              "asset/css/bootstrap.min.css",
+              "asset/css/icomoon.css",
+              "asset/css/jquery-ui.css",
+              "asset/css/owl.carousel.css",
+              "asset/css/transitions.css",
+              "asset/css/main.css",
+              "asset/css/color-purple.css",
+              "asset/css/responsive.css"
             ],
             "scripts": [],
             "assets": [
