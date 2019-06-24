@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CategoryComponent } from './components/category.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 const routes: Routes = [
@@ -15,7 +16,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [CategoryComponent],
   imports: [
-    CommonModule, [RouterModule.forChild(routes)]
+    CommonModule, [RouterModule.forChild(routes)], SharedModule
   ]
 })
 export class CategoryModule { }
