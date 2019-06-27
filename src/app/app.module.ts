@@ -29,7 +29,7 @@ import { NotFoundComponent } from './modules/not-found/component/not-found.compo
     RegistrationModule,
     LoginModule,
     CategoryModule,
-    
+    CategoryDetailModule,
     SharedModule,
     AppRoutingModule
   ],
