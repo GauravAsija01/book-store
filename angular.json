@@ -27,7 +27,6 @@
               "src/assets/css/bootstrap.min.css",
               "src/assets/css/normalize.css",
               "src/assets/css/font-awesome.min.css",
-              "src/assets/css/bootstrap.min.css",
               "src/assets/css/icomoon.css",
               "src/assets/css/jquery-ui.css",
               "src/assets/css/owl.carousel.css",
@@ -48,7 +47,7 @@
               "src/assets/js/countTo.js",
               "src/assets/js/appear.js",
               "src/assets/js/gmap3.js",
-             "src/assets/js/main.js"
+              "src/assets/js/main.js"
             ]
           },
           "configurations": {

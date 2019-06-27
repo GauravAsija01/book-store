@@ -1,0 +1,55 @@
+{
+  "todos": [
+    {
+      "id": 2,
+      "taskName": "Hello 2",
+      "isCompleted": true
+    },
+    {
+      "taskName": "Hello 2",
+      "isCompleted": true,
+      "id": 6
+    },
+    {
+      "taskName": "Gaurav Asija",
+      "isCompleted": false,
+      "id": 7
+    },
+    {
+      "taskName": "mhgmhgm",
+      "isCompleted": false,
+      "id": 12
+    },
+    {
+      "taskName": ".,jk.gk..kj",
+      "isCompleted": false,
+      "id": 16
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "book_name": "Help Me Find My Stomach",
+      "book_img": "img-01.jpg",
+      "author": "Angela Gunning",
+      "category": "Art & Photography",
+      "rating": 4,
+      "price": 27.20,
+      "discount_p": 25.18,
+      "wishlist": false     
+    }
+  ],
+  "usersdata": [
+    {
+      "id": 1,
+      "firstname": "Gaurav",
+      "lastname": "Asija",
+      "emailid": "gaurav.designer01@gmail.com",
+      "npassword": "gaur1234",
+      "cpassword": "gaur1234"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
