@@ -8,6 +8,7 @@ import { HomeModule } from './modules/home/home.module';
 import { LoginModule } from './modules/login/login.module';
 import { RegistrationModule } from './modules/registration/registration.module';
 import { CategoryModule } from './modules/category/category.module';
+import { CategoryDetailModule } from './modules/category-detail/category-detail.module';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -28,6 +29,7 @@ import { NotFoundComponent } from './modules/not-found/component/not-found.compo
     RegistrationModule,
     LoginModule,
     CategoryModule,
+    
     SharedModule,
     AppRoutingModule
   ],
