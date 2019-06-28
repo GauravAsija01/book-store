@@ -5,17 +5,18 @@ import { CommonModule } from '@angular/common';
 import { CatDetailComponent } from './component/cat-detail.component';
 import { SharedModule } from '../../shared/shared.module';
 
-const routes: Routes = [
+// const routes: Routes = [
 
-  { path: 'category/product', component: CatDetailComponent }
+//   { path: 'category/product', component: CatDetailComponent }
 
 
- ];
+//  ];
 
 @NgModule({
   declarations: [CatDetailComponent],
   imports: [
-    CommonModule, [RouterModule.forChild(routes)], SharedModule
+    CommonModule, SharedModule
+    //[RouterModule.forChild(routes)],
   ]
 })
 export class CategoryDetailModule { }
