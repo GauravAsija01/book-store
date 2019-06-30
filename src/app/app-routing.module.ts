@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { NotFoundComponent } from './modules/not-found/component/not-found.component';
+
+
 
  const routes: Routes = [
 
-  { path: '**', component: NotFoundComponent }
+   //{ path: '', redirectTo: 'home', pathMatch: 'full'}
+  //{ path: '', component: LayoutSharedComponent},
+  //{ path: '**', component: NotFoundComponent }
 
 
  ];

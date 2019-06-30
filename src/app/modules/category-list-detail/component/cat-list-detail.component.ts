@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-cat-detail',
-  templateUrl: './cat-detail.component.html',
-  styleUrls: ['./cat-detail.component.css']
+  selector: 'app-cat-list-detail',
+  templateUrl: './cat-list-detail.component.html',
+  styleUrls: ['./cat-list-detail.component.css']
 })
-export class CatDetailComponent implements OnInit {
+export class CatListDetailComponent implements OnInit {
+
+  public imgURL = "assets/";
 
   constructor(private route: ActivatedRoute) { }
 

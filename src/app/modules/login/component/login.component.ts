@@ -2,6 +2,9 @@
 
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { User } from '../../../models/user';
+import { Router, ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -17,7 +20,7 @@ export class LoginComponent implements OnInit {
 
   // @Output() loginFlagOutput = new EventEmitter();
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.loginInt();
@@ -39,7 +42,22 @@ export class LoginComponent implements OnInit {
   loginSubmit(){
     this.submitted = true;
     console.log(this.login);
-    console.log(this.login.value);
+    //console.log(this.login.value);
+    this.validateUSer();
+  }
+
+  validateUSer(){
+    const emailInput = "gaurav.designer01@gmail.com";
+    const pwd = "gaur1234";
+    if(this.form.email.value == emailInput && this.form.password.value == pwd){
+        console.log("LogIn");
+        this.router.navigate(["/home"]);
+    } else{
+      console.log("ERROR");
+      return false;
+    }
+
+
   }
 
 

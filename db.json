@@ -37,6 +37,17 @@
       "price": 27.20,
       "discount_p": 25.18,
       "wishlist": false     
+    },
+    {
+      "id": 2,
+      "book_name": "Help Me Find My Stomach 02",
+      "book_img": "img-02.jpg",
+      "author": "Angela Gunning",
+      "category": "Art & Photography",
+      "rating": 4,
+      "price": 27.20,
+      "discount_p": 25.18,
+      "wishlist": false     
     }
   ],
   "usersdata": [

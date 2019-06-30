@@ -1,4 +1,3 @@
-import { CategoryService } from './../../../services/category.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,23 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryComponent implements OnInit {
 
-  public imgURL = "assets/";
-  categoriesProd: any[] = [];
-
-  constructor(private categoryservice: CategoryService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.loadAllCategoryProd();
+
 
   }
 
-  loadAllCategoryProd(){
-    this.categoryservice.getAllCategoryProd().subscribe((data:any[]) => {
-      this.categoriesProd = data;
-    },(err) => {
-      console.log(err);
-    });
-  }
+
 
 
 

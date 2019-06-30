@@ -6,9 +6,11 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { LoginComponent } from '../modules/login/component/login.component';
+import { RegistrationComponent } from '../modules/registration/component/registration.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegistrationComponent }
 ]
 
 
