@@ -33,10 +33,11 @@
       "book_img": "img-01.jpg",
       "author": "Angela Gunning",
       "category": "Art & Photography",
+      "cat_id": 1,
       "rating": 4,
       "price": 27.20,
       "discount_p": 25.18,
-      "wishlist": false     
+      "wishlist": false
     },
     {
       "id": 2,
@@ -44,10 +45,11 @@
       "book_img": "img-02.jpg",
       "author": "Angela Gunning",
       "category": "Art & Photography",
-      "rating": 4,
-      "price": 27.20,
-      "discount_p": 25.18,
-      "wishlist": false     
+      "cat_id": 1,
+      "rating": 3,
+      "price": 30.40,
+      "discount_p": 252.18,
+      "wishlist": false
     }
   ],
   "usersdata": [
@@ -59,8 +61,5 @@
       "npassword": "gaur1234",
       "cpassword": "gaur1234"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
