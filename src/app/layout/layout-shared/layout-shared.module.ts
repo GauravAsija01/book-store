@@ -2,6 +2,9 @@ import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
+import { AuthGuard } from './../../guards/auth.guard';
+
+
 import { SharedModule } from '../../shared/shared.module';
 import { HomeModule } from 'src/app/modules/home/home.module';
 import { CategoryModule } from 'src/app/modules/category/category.module';
@@ -19,9 +22,10 @@ const routes: Routes = [
     children: [
       { path: 'home', component: HomeComponent },
       { path: 'category', component: CategoryComponent,
+        canActivate: [AuthGuard],
         children: [
           { path: '', component: CategoryListComponent },
-          { path: ':id', component: CatListDetailComponent }
+          { path: ':id/:name', component: CatListDetailComponent }
         ]
       },
       { path: '**', component: NotFoundComponent }

@@ -51,6 +51,8 @@ export class LoginComponent implements OnInit {
     const pwd = "gaur1234";
     if(this.form.email.value == emailInput && this.form.password.value == pwd){
         console.log("LogIn");
+        //const key = 'Item 1';
+        localStorage.setItem(this.form.email.value, this.form.password.value);
         this.router.navigate(["/home"]);
     } else{
       console.log("ERROR");
