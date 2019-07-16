@@ -1,12 +1,6 @@
-// https://long2know.com/2017/04/angular-filter-checkboxes/
-// https://www.freakyjolly.com/angular-4-5-typescript-create-filter-list-with-check-boxes-to-select-from-list/
-// https://stackoverflow.com/questions/50075567/error-the-pipe-filter-could-not-be-found-while-using-angular4
+//https://stackoverflow.com/questions/52725392/angular-6-checkbox-filter
 
 import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { FilterPipe } from './filter.pipe';
-
-
 
 @Component({
   selector: 'app-filter',
@@ -15,15 +9,33 @@ import { FilterPipe } from './filter.pipe';
 })
 export class FilterComponent implements OnInit {
 
-  filterItems = [];
-
   constructor() { }
 
   ngOnInit() {
   }
 
-  checked() {
-    return this.filterItems.filter(item => { return item.checked; });
+  filter = { mens: true, womens: true, kids: true };
+  products = [
+    {
+      'bikeId': 6,
+      'bikeName': 'Kids blue bike',
+      'bikeCode': 'KB-3075',
+      'releaseDate': 'June 28, 2016',
+      'description': 'Kids blue bike with stabalizers',
+      'category': 'kids',
+      'price': 290.00,
+      'starRating': 4.8,
+      'imageUrl': 'https://openclipart.org/image/2400px/svg_to_png/1772/bike-kid.png'
+    }
+  ]
+  filteredProducts = [];
+
+  filterChange() {
+    this.filteredProducts = this.products.filter(x =>
+       (x.category === 'kids' && this.filter.kids)
+       || (x.category === 'mens' && this.filter.mens)
+       || (x.category === 'womens' && this.filter.womens)
+    );
   }
 
 }

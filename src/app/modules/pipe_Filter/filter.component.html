@@ -1,17 +1,12 @@
 <div class="form form-inline">
-  <div *ngFor="let filterItem of filterItems; let i = index;" class="form-check" style="padding-right:20px;">
-    <label class="form-check-label">
-      <input type="checkbox" class="form-check-input" [(ngModel)]="filterItem.checked" [value]="filterItem.value"> Value {{ i + 1 }}
-    </label>
-  </div>
+  <input type="checkbox" [(ngModel)]="filter.mens" (ngModelChange)="filterChange()" /> Mens
+<input type="checkbox" [(ngModel)]="filter.womens" (ngModelChange)="filterChange()" /> Womens
+<input type="checkbox" [(ngModel)]="filter.kids" (ngModelChange)="filterChange()" /> Kids
 </div>
-
-<pre>Selected items: <span *ngFor="let filterItem of checked()" style="padding-right:10px;">{{ filterItem.value }}</span></pre>
-
-
 
 <br>
 <hr>
 <ul>
-  <li *ngFor="let item of items | filter: { property: ''} : checked() : false">{{ item.name }} - {{ item.property }}</li>
+  <li *ngFor="let product of filteredProducts">{{product.bikeName}}</li>
 </ul>
+
