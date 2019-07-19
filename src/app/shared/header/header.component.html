@@ -17,11 +17,17 @@
               </a>
             </li>
           </ul>
-          <div class="tg-userlogin" *ngIf="submitted">
-            <figure><a routerLink="/login" href="javascript:;"><img src="{{imgURL}}images/users/img-01.jpg" alt="image description"></a></figure>
+
+          <div class="tg-userlogin dropdown" *ngIf="loggedinDiv">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <figure><a href="javascript:;"><img src="{{imgURL}}images/users/img-01.jpg" alt="image description"></a></figure>
             <span>Hi, Melonie</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="javascript:;" (click)="logout()">Logout</a>
+            </div>
           </div>
-          <div class="tg-userlogin">
+          <div class="tg-userlogin" *ngIf="!loggedinDiv">
               <a routerLink="/login" href="javascript:;">Login</a>
           </div>
         </div>

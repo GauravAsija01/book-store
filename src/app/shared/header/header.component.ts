@@ -7,12 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  //public imgURL = "https://cdn.jsdelivr.net/gh/GauravAsija01/book-store@master/src/asset/"
+  loggedinDiv = false;
+
   public imgURL = "assets/";
 
   constructor() { }
 
   ngOnInit() {
+    this.loggedin();
+  }
+
+
+  loggedin(){
+    const result = localStorage.getItem('admin');
+    //console.log(result);
+    if(result){
+      this.loggedinDiv = true;
+    }
+  }
+
+  logout(){
+    //localStorage.clear();
+    localStorage.removeItem('admin');
+    console.log("Local storage Clear");
+    window.location.reload();
+
   }
 
 }

@@ -4,6 +4,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { User } from '../../../models/user';
 import { Router, ActivatedRoute } from '@angular/router';
+import { LoginService } from './../../../services/login.service';
 
 
 @Component({
@@ -20,7 +21,7 @@ export class LoginComponent implements OnInit {
 
   // @Output() loginFlagOutput = new EventEmitter();
 
-  constructor(private fb: FormBuilder, private route: ActivatedRoute, private router: Router) { }
+  constructor(private fb: FormBuilder, private route: ActivatedRoute, private router: Router, private loginservice: LoginService) { }
 
   ngOnInit() {
     this.loginInt();
@@ -47,8 +48,8 @@ export class LoginComponent implements OnInit {
   }
 
   validateUSer(){
-    const emailInput = "gaurav.designer01@gmail.com";
-    const pwd = "gaur1234";
+    const emailInput = "admin";
+    const pwd = "password";
     if(this.form.email.value == emailInput && this.form.password.value == pwd){
         console.log("LogIn");
         //const key = 'Item 1';
