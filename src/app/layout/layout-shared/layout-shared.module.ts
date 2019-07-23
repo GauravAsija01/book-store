@@ -17,6 +17,7 @@ import { CategoryListComponent } from '../../modules/category-list/component/cat
 import { CatListDetailComponent } from 'src/app/modules/category-list-detail/component/cat-list-detail.component';
 import { FilterComponent } from './../../modules/pipe_Filter/filter.component';
 import { NotFoundComponent } from 'src/app/modules/not-found/component/not-found.component';
+import { TodoComponent } from 'src/app/modules/todos/todo.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -31,6 +32,7 @@ const routes: Routes = [
         ]
       },
       { path: 'filter', component: FilterComponent },
+      { path: 'todos', component: TodoComponent },
       { path: '**', component: NotFoundComponent }
     ]
   }

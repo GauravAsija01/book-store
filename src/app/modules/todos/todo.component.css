@@ -1,0 +1,6 @@
+header{ background: #f4f4f4; padding: 10px 0; width:100%; float:left;}
+section{ padding: 40px; width:100%; float:left;}
+input:focus{ outline: none; border-color:#999; box-shadow: none}
+.taskDone{ text-decoration: line-through;}
+.actions a{ padding:0 3px;}
+.form-control, input[type="text"]{ height:34px;}

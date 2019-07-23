@@ -8,11 +8,17 @@ import { RegistrationModule } from '../../modules/registration/registration.modu
 
 import { LayoutOuterComponent } from './component/layout-outer.component';
 import { RegistrationComponent } from '../../modules/registration/component/registration.component';
+import { TodoComponent } from './../../modules/todos/todo.component';
 
 
 
 const routes: Routes = [
 
+  { path: '', component: LayoutOuterComponent,
+    children: [
+      { path: 'todos', component: TodoComponent }
+    ]
+  }
 ]
 
 @NgModule({

@@ -9,11 +9,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { LoaderComponent } from './shared/loader/loader.component';
+import { TodoComponent } from './modules/todos/todo.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, LoaderComponent
+    AppComponent, LoaderComponent, TodoComponent
   ],
   imports: [
     BrowserModule,
