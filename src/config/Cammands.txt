@@ -1,0 +1,44 @@
+Video URL(https://www.youtube.com/watch?v=UYh6EvpQquw)
+
+Create Folder First NodeJs
+In Node folder Run Command 
+npm init
+------------------------------------------
+Install Node express Mongo  Body parser Command
+npm i express mongoose body-parser --save
+-----------------------------------------------------------------------
+After this Create db.js file with code writing, then use cammand
+node db.js
+-------------------------------------------------------
+After this we use intall nodemon command for not restart this execution/project after any changes for install node
+nodemon db.js
+------------------------------------------------------------------
+After that Create index.js file for import packages Write code in file. Run Command then
+nodemon index.js
+----------------------------------------------------------------------------
+
+Now Create CRUD.
+-----------------------------------------------------------------
+Now create model folder and create new file (employee.js).
+-----------------------------------------------------------------
+After this create controller file name (employeeController.js) for config.
+-------------------------------------------------------------------------
+Complete Config js for controller
+-----------------------------------------------------------------------------
+Now create angular project as name (angularapp) command ng-new angularapp
+----------------------------------------------------------------------------
+Now run project ng server --o
+---------------------------------------------------------------------------
+
+Create new controller as employee command ng g c employee
+-------------------------------------------------------------
+Create service for employee command ng g s employee
+------------------------------------------------------------------------------- 
+
+Create model in shared folder command ng g class employee --type=model
+
+
+
+
+
+
