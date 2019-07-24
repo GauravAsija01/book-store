@@ -2,41 +2,40 @@ const express = require('express');
 const app = express();
 var router = express.Router();
 
-let Todo = require('../models/todos');
-//let Customer = require('../models/customer');
+let Responsible = require('../models/responsible');
 
 // Defined get data(index or listing) route
 router.route('/').get(function (req, res) {
-  Todo.find(function (err, todos){
+  Responsible.find(function (err, responsible){
     if(err){
       console.log(err);
     }
     else {
-      console.log('Retriving todos');
-      res.json(todos);
+      console.log('Retriving responsible');
+      res.json(responsible);
     }
   });
 });
 
 // For Add record in database collection
-router.route('/add').post(function (req, res) {
-  let todo = new Todo(req.body);
-  todo.save()
-    .then(todo => {
-    res.status(200).json({'todos': 'todo in added successfully'});
-    })
-    .catch(err => {
-    res.status(400).send("unable to save to database");
-    });
-});
+// router.route('/add').post(function (req, res) {
+//   let todo = new Todo(req.body);
+//   todo.save()
+//     .then(todo => {
+//     res.status(200).json({'todos': 'todo in added successfully'});
+//     })
+//     .catch(err => {
+//     res.status(400).send("unable to save to database");
+//     });
+// });
 
-// For Delete Record
-router.route('/delete/:id').get(function (req, res) {
-  Todo.findByIdAndRemove({_id: req.params.id}, function(err, todo){
-      if(err) res.json(err);
-      else res.json('Successfully removed');
-  });
-});
+// // For Delete Record
+// router.route('/delete/:id').get(function (req, res) {
+//   Todo.findByIdAndRemove({_id: req.params.id}, function(err, todo){
+//       if(err) res.json(err);
+//       else res.json('Successfully removed');
+//   });
+// });
 
 // // Defined edit route
 // router.route('/edit/:id').get(function (req, res) {

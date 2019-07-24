@@ -45,15 +45,15 @@ export class TodoComponent implements OnInit {
   }
 
   onDelete(id){
-    
-    
+
+
     if(confirm("Are you sure to delete Employee "+id)) {
       console.log(id + " Employee Record Deleted Successfully");
       this.todoService.deleteTodoRecord(id);
       console.log("Deleted -- ", id);
       window.location.reload();
     }
-    
+
   }
 
   toggleTable(){
@@ -69,7 +69,7 @@ export class TodoComponent implements OnInit {
 
 
 
-  
+
 // With JSON sever function
 // fetchAllRecords(){
 //   this.todoService.getTodoRecords().subscribe((data:any[]) => {
