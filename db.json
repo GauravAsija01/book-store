@@ -46,6 +46,9 @@
       "author": "Angela Gunning",
       "category": "Art & Photography",
       "cat_id": 1,
+      "usersdata":[{
+
+      }],
       "rating": 3,
       "price": 30.40,
       "discount_p": 252.18,
@@ -54,7 +57,15 @@
   ],
   "usersdata": [
     {
-      "id": 1,
+      "id": 10000000,
+      "firstname": "Gaurav",
+      "lastname": "Asija",
+      "emailid": "gaurav.designer01@gmail.com",
+      "npassword": "gaur1234",
+      "cpassword": "gaur1234"
+    },
+    {
+      "id": 11000000,
       "firstname": "Gaurav",
       "lastname": "Asija",
       "emailid": "gaurav.designer01@gmail.com",
